@@ -7,13 +7,18 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #3d4152;
+  background-color: #141C3A;
+  background-color: #7510F7;
 }
 .navigation {
   position: fixed;
   inset: 20px 0 20px 20px;
   width: 75px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: #3d4152; */
+  /* background-color: rgb(165, 165, 165); */
+  /* background-color: #7510F7; */
+  background-color: #141C3A;
   transition: 0.5s ease;
   display: flex;
   align-items: center;
@@ -41,7 +46,7 @@ body {
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: #eee;
   transform: translateY(-8px);
   transition: 0.5s;
 }
@@ -53,15 +58,14 @@ body {
   position: absolute;
   width: 30px;
   height: 2px;
-  background-color: #333;
+  background-color: #eee;
   transform: translateY(8px);
   transition: 0.5s;
-  box-shadow: 0 -8px 0 #333;
+  box-shadow: 0 -8px 0 #eee;
 }
 .navigation.open .menuToggle::after {
   transform: translateY(0px) rotate(-45deg);
-  /* box-shadow: none; */
-  box-shadow: 0 0 0 #333;
+  box-shadow: 0 0 0 #eee;
 }
 
 .navigation ul {
@@ -99,11 +103,13 @@ body {
   line-height: 60px;
   transition: 0.5s;
   font-size: 1.75em;
-  color: #222;
+  color: #eee;
+  color: yellow;
   border-radius: 10px;
 }
 .navigation ul li.active a .icon {
   color: #fff;
+  /* color: black; */
   background-color: var(--clr);
 }
 .navigation ul li a .icon::before {
@@ -125,7 +131,7 @@ body {
   padding: 0 15px;
   position: relative;
   height: 60px;
-  color: #333;
+  color: #eee;
   display: flex;
   align-items: center;
   opacity: 0;
